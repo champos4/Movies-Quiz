@@ -1,0 +1,185 @@
+.timer-container {
+    margin: 20px 0;
+}
+
+.timer {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.timer i {
+    margin-right: 8px;
+    color: #4ecdc4;
+}
+
+.timer.warning {
+    color: #ff6b6b;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Question Types */
+.question-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.question-text {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Multiple Choice */
+.options-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.option-btn {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.option-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(10px);
+}
+
+.option-btn.selected {
+    background: #4ecdc4;
+    border-color: #4ecdc4;
+}
+
+.option-btn.correct {
+    background: #2ecc71;
+    border-color: #2ecc71;
+}
+
+.option-btn.incorrect {
+    background: #e74c3c;
+    border-color: #e74c3c;
+}
+
+/* True/False */
+.true-false-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.true-false-btn {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+}
+
+/* Picture Question */
+.picture-question {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.picture-question img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* High Scores */
+.high-scores {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.high-scores ul {
+    list-style: none;
+    padding: 0;
+}
+
+.high-scores li {
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.high-scores li:last-child {
+    border-bottom: none;
+}
+
+/* Progress Bar */
+.progress {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.progress-bar {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+}
+
+/* Score Display */
+.score-display {
+    font-size: 1.5rem;
+    color: #4ecdc4;
+}
+
+/* Modal Styles */
+.modal-content {
+    background: #1a1a1a;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Back Button */
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.back-button .btn {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.back-button .btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-5px);
+}
+
+.back-button .btn i {
+    margin-right: 8px;
+}
